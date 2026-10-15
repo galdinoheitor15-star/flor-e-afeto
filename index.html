@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flor & Afeto | Presentes Criativos · Carpina/PE</title>
+  <meta name="description" content="Flor & Afeto — flores, cestas personalizadas, cafés da manhã e presentes criativos em Carpina/PE. Loja física e pedidos online pelo WhatsApp.">
+  <meta name="theme-color" content="#c4777e">
+  <meta property="og:title" content="Flor & Afeto | Presentes Criativos">
+  <meta property="og:description" content="Produtos para presentear, florir e decorar. Carpina/PE.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23c4777e'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='white' text-anchor='middle'%3EF%26A%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="is-loading">
+
+  <!-- Marca reutilizável (logo) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="flower" viewBox="0 0 40 40">
+        <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 20c-3-4-3-9 0-12 3 3 3 8 0 12z"/>
+          <path d="M20 20c4-3 9-3 12 0-3 3-8 3-12 0z"/>
+          <path d="M20 20c3 4 3 9 0 12-3-3-3-8 0-12z"/>
+          <path d="M20 20c-4 3-9 3-12 0 3-3 8-3 12 0z"/>
+          <circle cx="20" cy="20" r="2"/>
+        </g>
+      </symbol>
+      <symbol id="tulip" viewBox="0 0 40 60">
+        <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 26c-7 0-10-6-10-14l5 4 5-8 5 8 5-4c0 8-3 14-10 14z"/>
+          <path d="M20 26v30"/>
+          <path d="M20 46c-6-1-10-5-11-11 6 1 10 5 11 11z"/>
+          <path d="M20 40c5-1 8-4 9-9-5 1-8 4-9 9z"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ TELA DE CARREGAMENTO ============ -->
+  <div id="loader" role="status" aria-label="Carregando Flor & Afeto">
+    <div class="loader-petals" aria-hidden="true"></div>
+    <div class="loader-inner">
+      <div class="loader-seal">
+        <svg class="loader-ring" viewBox="0 0 220 220" aria-hidden="true">
+          <circle cx="110" cy="110" r="104" />
+        </svg>
+        <div class="loader-disc">
+          <svg class="loader-bloom" viewBox="0 0 120 120" aria-hidden="true">
+            <g fill="none" stroke="#fff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path class="draw d1" d="M60 62c-9-11-9-25 0-34 9 9 9 23 0 34z"/>
+              <path class="draw d2" d="M60 62c11-9 25-9 34 0-9 9-23 9-34 0z"/>
+              <path class="draw d3" d="M60 62c-11-9-25-9-34 0 9 9 23 9 34 0z"/>
+              <path class="draw d4" d="M60 62c-4 9-4 20 0 30"/>
+              <path class="draw d5" d="M60 82c-8-1-13-6-15-13 8 1 13 6 15 13z"/>
+              <path class="draw d6" d="M60 76c7-1 11-5 13-11-7 1-11 5-13 11z"/>
+            </g>
+          </svg>
+          <div class="loader-word" aria-hidden="true">
+            <span>F</span><span>l</span><span>o</span><span>r</span><span class="amp">&amp;</span><span>A</span><span>f</span><span>e</span><span>t</span><span>o</span>
+          </div>
+        </div>
+      </div>
+      <p class="loader-tag">presentes criativos</p>
+      <div class="loader-bar"><span></span></div>
+      <p class="loader-quote">“Para presentear, florir e decorar”</p>
+    </div>
+  </div>
+
+  <!-- ============ CABEÇALHO ============ -->
+  <header class="site-header" id="top">
+    <div class="container header-row">
+      <a href="#inicio" class="brand" aria-label="Flor & Afeto — início">
+        <span class="brand-disc">F&amp;A</span>
+        <span class="brand-text"><span>Flor <em>&amp;</em> Afeto</span><small>presentes criativos</small></span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="Principal">
+        <a href="#colecoes">Coleções</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#ocasioes">Ocasiões</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn cart-btn" id="openCart" aria-label="Abrir minha seleção">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <a class="btn btn-rose btn-sm hide-sm" data-wa="Olá, Flor & Afeto! Vim pelo site e gostaria de fazer um pedido 🌷" href="#">Fazer pedido</a>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Carpina · Pernambuco</p>
+          <h1 class="reveal">Presentes que <em>florescem</em> em afeto</h1>
+          <p class="lead reveal">Flores, cestas personalizadas, cafés da manhã e presentes criativos montados à mão, com cuidado em cada laço, para transformar datas em lembranças.</p>
+          <div class="hero-cta reveal">
+            <a href="#catalogo" class="btn btn-rose">Ver catálogo</a>
+            <a href="#" class="btn btn-ghost" data-wa="Olá! Gostaria de montar um presente personalizado 🎁">Montar presente sob medida</a>
+          </div>
+          <ul class="hero-badges reveal">
+            <li><svg><use href="#flower"/></svg>Loja física + online</li>
+            <li><svg><use href="#flower"/></svg>Entregas em Carpina e região</li>
+            <li><svg><use href="#flower"/></svg>Personalização completa</li>
+          </ul>
+        </div>
+        <div class="hero-art reveal">
+          <div class="arch">
+            <img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=900&q=80" alt="Buquê de flores delicadas em tons de rosa" loading="eager">
+          </div>
+          <div class="hero-seal">
+            <svg viewBox="0 0 200 200" aria-hidden="true">
+              <defs><path id="circlePath" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+              <text><textPath href="#circlePath">feito à mão · com carinho · flor &amp; afeto · </textPath></text>
+            </svg>
+            <svg class="seal-flower"><use href="#flower"/></svg>
+          </div>
+          <div class="hero-card">
+            <span class="script">com amor,</span>
+            <strong>Cestas de café da manhã</strong>
+            <small>Encomende com antecedência</small>
+          </div>
+        </div>
+      </div>
+      <a href="#colecoes" class="scroll-hint" aria-label="Rolar para coleções"><span></span></a>
+    </section>
+
+    <!-- ============ FAIXA ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Flores</span><i>✿</i><span>Cestas personalizadas</span><i>✿</i><span>Café da manhã</span><i>✿</i><span>Balões</span><i>✿</i><span>Pelúcias</span><i>✿</i><span>Decoração</span><i>✿</i><span>Datas especiais</span><i>✿</i>
+        <span>Flores</span><i>✿</i><span>Cestas personalizadas</span><i>✿</i><span>Café da manhã</span><i>✿</i><span>Balões</span><i>✿</i><span>Pelúcias</span><i>✿</i><span>Decoração</span><i>✿</i><span>Datas especiais</span><i>✿</i>
+      </div>
+    </div>
+
+    <!-- ============ COLEÇÕES ============ -->
+    <section class="section" id="colecoes">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Nossas coleções</p>
+          <h2>Para presentear, <em>florir</em> e decorar</h2>
+          <p>Escolha por onde começar. Cada peça pode ser personalizada com cartão, cores e mimos extras.</p>
+        </div>
+        <div class="collections">
+          <a href="#catalogo" class="collection reveal" data-goto="flores">
+            <figure><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=800&q=80" alt="Flores rosas" loading="lazy"></figure>
+            <div class="collection-info"><span class="num">01</span><h3>Flores</h3><p>Buquês, arranjos e flores avulsas</p></div>
+          </a>
+          <a href="#catalogo" class="collection reveal" data-goto="cafe">
+            <figure><img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=800&q=80" alt="Mesa de café da manhã" loading="lazy"></figure>
+            <div class="collection-info"><span class="num">02</span><h3>Café da manhã</h3><p>Cestas para começar o dia com afeto</p></div>
+          </a>
+          <a href="#catalogo" class="collection reveal" data-goto="cestas">
+            <figure><img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=800&q=80" alt="Presente embrulhado com laço" loading="lazy"></figure>
+            <div class="collection-info"><span class="num">03</span><h3>Cestas & presentes</h3><p>Kits personalizados para cada pessoa</p></div>
+          </a>
+          <a href="#catalogo" class="collection reveal" data-goto="decor">
+            <figure><img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?auto=format&fit=crop&w=800&q=80" alt="Balões de festa" loading="lazy"></figure>
+            <div class="collection-info"><span class="num">04</span><h3>Balões & decoração</h3><p>Surpresas que enchem o ambiente</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATÁLOGO ============ -->
+    <section class="section section-blush" id="catalogo">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Catálogo</p>
+          <h2>Escolha, selecione e <em>peça pelo WhatsApp</em></h2>
+          <p>Adicione os itens à sua seleção. Enviamos tudo em uma única mensagem e confirmamos valores, disponibilidade e entrega.</p>
+        </div>
+
+        <div class="catalog-tools reveal">
+          <div class="filters" role="tablist" aria-label="Filtrar catálogo" id="filters">
+            <button class="chip active" data-filter="all" role="tab" aria-selected="true">Tudo</button>
+            <button class="chip" data-filter="flores" role="tab">Flores</button>
+            <button class="chip" data-filter="cafe" role="tab">Café da manhã</button>
+            <button class="chip" data-filter="cestas" role="tab">Cestas & presentes</button>
+            <button class="chip" data-filter="decor" role="tab">Balões & decoração</button>
+          </div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+            <input type="search" id="search" placeholder="Buscar presente…" aria-label="Buscar no catálogo">
+          </label>
+        </div>
+
+        <div class="products" id="products" aria-live="polite"></div>
+        <p class="empty" id="empty" hidden>Nenhum item encontrado. Que tal pedir algo sob medida? <a href="#" data-wa="Olá! Procuro um presente que não encontrei no site:">Fale com a gente</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ OCASIÕES ============ -->
+    <section class="section" id="ocasioes">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Ocasiões</p>
+          <h2>Toda data merece um <em>gesto</em></h2>
+        </div>
+        <div class="occasions">
+          <button class="occasion reveal" data-occ="Aniversário"><span class="occ-ico">🎂</span><span>Aniversário</span></button>
+          <button class="occasion reveal" data-occ="Dia dos Namorados"><span class="occ-ico">💌</span><span>Namorados</span></button>
+          <button class="occasion reveal" data-occ="Dia das Mães"><span class="occ-ico">🌷</span><span>Dia das Mães</span></button>
+          <button class="occasion reveal" data-occ="Dia dos Avós"><span class="occ-ico">👵🏻</span><span>Dia dos Avós</span></button>
+          <button class="occasion reveal" data-occ="Dia das Crianças"><span class="occ-ico">🧸</span><span>Dia das Crianças</span></button>
+          <button class="occasion reveal" data-occ="Inauguração"><span class="occ-ico">✨</span><span>Inauguração</span></button>
+          <button class="occasion reveal" data-occ="Agradecimento"><span class="occ-ico">🤍</span><span>Agradecimento</span></button>
+          <button class="occasion reveal" data-occ="Formatura"><span class="occ-ico">🎓</span><span>Formatura</span></button>
+        </div>
+        <p class="occ-note reveal">Toque em uma ocasião para pedir sugestões personalizadas pelo WhatsApp.</p>
+      </div>
+    </section>
+
+    <!-- ============ COMO FUNCIONA ============ -->
+    <section class="section section-rose" id="como">
+      <div class="container">
+        <div class="section-head light reveal">
+          <p class="eyebrow">Como funciona</p>
+          <h2>Do pedido ao <em>sorriso</em></h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><span class="step-n">1</span><h3>Escolha</h3><p>Navegue pelo catálogo ou conte pra gente o que imagina.</p></li>
+          <li class="reveal"><span class="step-n">2</span><h3>Personalize</h3><p>Cores, cartão com mensagem, mimos extras e embalagem.</p></li>
+          <li class="reveal"><span class="step-n">3</span><h3>Confirme</h3><p>Combinamos valores, data e horário pelo WhatsApp.</p></li>
+          <li class="reveal"><span class="step-n">4</span><h3>Receba</h3><p>Retire na loja ou receba no endereço, prontinho para emocionar.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="section" id="sobre">
+      <div class="container about">
+        <div class="about-art reveal">
+          <div class="about-img a1"><img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=700&q=80" alt="Arranjo floral" loading="lazy"></div>
+          <div class="about-img a2"><img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=600&q=80" alt="Rosa delicada" loading="lazy"></div>
+          <svg class="about-tulip"><use href="#tulip"/></svg>
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow">Nossa história</p>
+          <h2>Um ateliê de <em>afeto</em> em Carpina</h2>
+          <p>A Flor & Afeto nasceu da vontade de transformar presentes em experiências. Aqui, cada flor é escolhida a dedo, cada cesta é montada com atenção aos detalhes e cada laço carrega um pouquinho de carinho.</p>
+          <p>Unimos flores, cestas personalizadas, cafés da manhã, balões e mimos criativos para que você encontre o presente certo, seja para celebrar, agradecer ou simplesmente dizer “lembrei de você”.</p>
+          <div class="about-stats">
+            <div><strong data-count="2900">0</strong><span>seguidores no Instagram</span></div>
+            <div><strong>100%</strong><span>feito à mão</span></div>
+            <div><strong>∞</strong><span>possibilidades</span></div>
+          </div>
+          <p class="signature">Flor <span class="amp-serif">&amp;</span> Afeto</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTOS ============ -->
+    <section class="section section-blush" id="depoimentos">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Feedback</p>
+          <h2>Quem recebe, <em>sente</em></h2>
+        </div>
+        <div class="testimonials reveal" id="testimonials">
+          <div class="t-track" id="tTrack">
+            <!-- Substitua pelos depoimentos reais (destaque “Feedback” do Instagram) -->
+            <blockquote class="t-card"><p>“A cesta de café da manhã chegou linda, tudo caprichado nos detalhes. Minha mãe se emocionou!”</p><cite>— Cliente Flor &amp; Afeto</cite></blockquote>
+            <blockquote class="t-card"><p>“Atendimento super atencioso pelo WhatsApp e o buquê ficou ainda mais bonito do que eu imaginava.”</p><cite>— Cliente Flor &amp; Afeto</cite></blockquote>
+            <blockquote class="t-card"><p>“Encomendei para o aniversário da minha namorada e foi um sucesso. Embalagem impecável!”</p><cite>— Cliente Flor &amp; Afeto</cite></blockquote>
+          </div>
+          <div class="t-dots" id="tDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSTAGRAM ============ -->
+    <section class="section insta" id="instagram">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">@floreafetopresents</p>
+          <h2>Acompanhe nosso <em>jardim</em> no Instagram</h2>
+        </div>
+        <div class="insta-grid reveal">
+          <a href="https://www.instagram.com/floreafetopresents/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=500&q=80" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/floreafetopresents/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=500&q=80" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/floreafetopresents/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?auto=format&fit=crop&w=500&q=80" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/floreafetopresents/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=500&q=80" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/floreafetopresents/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=500&q=80" alt="" loading="lazy"></a>
+          <a href="https://www.instagram.com/floreafetopresents/" target="_blank" rel="noopener"><img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?auto=format&fit=crop&w=500&q=80" alt="" loading="lazy"></a>
+        </div>
+        <div class="center reveal"><a class="btn btn-ghost" href="https://www.instagram.com/floreafetopresents/" target="_blank" rel="noopener">Seguir no Instagram</a></div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-blush" id="faq">
+      <div class="container narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">Dúvidas frequentes</p>
+          <h2>Tudo o que você <em>precisa saber</em></h2>
+        </div>
+        <div class="faq reveal">
+          <details><summary>Como faço meu pedido?</summary><p>Adicione os itens à sua seleção aqui no site e toque em “Enviar pedido pelo WhatsApp”. Se preferir, fale direto com a gente pelo WhatsApp (81) 99399-9717 ou visite a loja física em Carpina.</p></details>
+          <details><summary>Vocês fazem entregas?</summary><p>Sim! Entregamos em Carpina e região. A taxa e os horários disponíveis são informados no momento da confirmação do pedido.</p></details>
+          <details><summary>Com quanta antecedência devo encomendar?</summary><p>Para cestas de café da manhã e presentes personalizados, recomendamos pedir com pelo menos 1 dia de antecedência. Em datas comemorativas, quanto antes melhor!</p></details>
+          <details><summary>Posso personalizar o presente?</summary><p>Claro. Escolha cores, inclua um cartão com mensagem, adicione pelúcias, balões, chocolates e outros mimos. É só nos contar a sua ideia.</p></details>
+          <details><summary>Quais formas de pagamento vocês aceitam?</summary><p>Consulte as formas de pagamento disponíveis diretamente pelo WhatsApp no momento do pedido.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section" id="contato">
+      <div class="container contact">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Visite & fale com a gente</p>
+          <h2>Loja física <em>+</em> pedidos online</h2>
+          <ul class="contact-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><strong>Endereço</strong><span>Carpina · Pernambuco</span><small>Confira a localização exata no destaque “Localização” do Instagram</small></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><strong>Horário</strong><span id="hoursText">Consulte nosso horário de atendimento</span><small id="openNow"></small></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 12a8 8 0 0 1-11.8 7L4 20l1.1-4A8 8 0 1 1 20 12z"/></svg><div><strong>WhatsApp</strong><a href="#" data-wa="Olá, Flor & Afeto! 🌷">(81) 99399-9717</a></div></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg><div><strong>Instagram</strong><a href="https://www.instagram.com/floreafetopresents/" target="_blank" rel="noopener">@floreafetopresents</a></div></li>
+          </ul>
+          <a href="#" class="btn btn-rose" data-wa="Olá, Flor & Afeto! Vim pelo site e gostaria de mais informações 🌷">Conversar no WhatsApp</a>
+        </div>
+        <div class="map reveal">
+          <iframe title="Mapa — Carpina/PE" src="https://www.google.com/maps?q=Carpina,+Pernambuco&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ RODAPÉ ============ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">Flor <em>&amp;</em> Afeto</div>
+        <p>Produtos para presentear, florir e decorar.<br>Cestas personalizadas &amp; presentes criativos.</p>
+      </div>
+      <div>
+        <h4>Navegue</h4>
+        <a href="#colecoes">Coleções</a><a href="#catalogo">Catálogo</a><a href="#ocasioes">Ocasiões</a><a href="#faq">Dúvidas</a>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <a href="#" data-wa="Olá, Flor & Afeto! 🌷">(81) 99399-9717</a>
+        <a href="https://www.instagram.com/floreafetopresents/" target="_blank" rel="noopener">@floreafetopresents</a>
+        <span>Carpina/PE</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Flor &amp; Afeto · Presentes Criativos</span>
+      <a href="#inicio" class="to-top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- ============ SELEÇÃO / CARRINHO ============ -->
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="drawer" id="drawer" aria-label="Minha seleção" aria-hidden="true">
+    <div class="drawer-head">
+      <h3>Minha seleção</h3>
+      <button class="icon-btn" id="closeCart" aria-label="Fechar">✕</button>
+    </div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-empty" id="cartEmpty">
+      <svg><use href="#tulip"/></svg>
+      <p>Sua seleção está vazia.</p>
+      <a href="#catalogo" class="btn btn-ghost btn-sm" id="browseBtn">Explorar catálogo</a>
+    </div>
+    <form class="drawer-form" id="orderForm">
+      <label>Seu nome<input type="text" name="nome" placeholder="Como podemos te chamar?" autocomplete="name"></label>
+      <div class="row2">
+        <label>Data desejada<input type="date" name="data"></label>
+        <label>Recebimento
+          <select name="entrega"><option>Entrega</option><option>Retirada na loja</option></select>
+        </label>
+      </div>
+      <label>Mensagem do cartão (opcional)<textarea name="cartao" rows="2" placeholder="Escreva a mensagem que vai junto ao presente…"></textarea></label>
+      <button type="submit" class="btn btn-rose btn-block">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+        Enviar pedido pelo WhatsApp
+      </button>
+      <p class="drawer-note">Valores, disponibilidade e taxa de entrega são confirmados no atendimento.</p>
+    </form>
+  </aside>
+
+  <!-- ============ MODAL DE PRODUTO ============ -->
+  <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <div class="modal-card">
+      <button class="icon-btn modal-close" id="modalClose" aria-label="Fechar">✕</button>
+      <figure class="modal-img"><img id="mImg" src="" alt=""></figure>
+      <div class="modal-body">
+        <p class="eyebrow" id="mCat"></p>
+        <h3 id="mTitle"></h3>
+        <p id="mDesc"></p>
+        <ul id="mList" class="m-list"></ul>
+        <div class="modal-actions">
+          <div class="qty">
+            <button type="button" id="qMinus" aria-label="Diminuir">−</button>
+            <span id="qVal">1</span>
+            <button type="button" id="qPlus" aria-label="Aumentar">+</button>
+          </div>
+          <button class="btn btn-rose" id="mAdd">Adicionar à seleção</button>
+        </div>
+        <a href="#" class="m-wa" id="mWa">ou perguntar sobre este item no WhatsApp →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp flutuante -->
+  <a href="#" class="wa-float" data-wa="Olá, Flor & Afeto! Vim pelo site 🌷" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l2 .9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+  </a>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
